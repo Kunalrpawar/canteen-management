@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Charm&family=Lora:wght@500&family=Poppins:wght@300&family=Roboto:wght@100&display=swap');
+      </style>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caprasimo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Web/canteen/dash/s.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Customer-Dashboard</title>
+</head>
+<body>
+    <section class="header">
+        <div class="container-fluid mr-0 ml-0">
+            <nav>
+                <a href="c2.html"><img src="/Web/canteen/c-logo.png" alt=""></a>
+    
+                <div class="nav-links" id="navLinks">
+                    <ul>
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <li><a href="c2.html">HOME</a></li>
+                        <li><a href="offer.html">OFFERS</a></li>
+                        <li><a href="order.html">ORDERS</a></li>
+                        <li><a href="profile.html">PROFILE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+    
+                        <li><a href="orderview.html" class="hero-btn" ><i class="fa-solid fa-cart-shopping" justify-content-center></i></a></li>
+    
+    
+                    </ul>
+    
+                </div>
+                <div class="icon-container">
+                    <i class="fa fa-bars" onclick="showMenu()" style="color: darkolivegreen;"></i>
+    
+                </div>
+    
+            </nav>
+        </div>
+        
+
+            <div class="home-slider owl-carousel">
+            <div class="slider-item js-fullheight">
+                <div class="overlay"></div>
+              <div class="container-fluid p-0">
+                <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+                    <img class="one-third order-md-last " src="/Web/canteen/dash/ice.png" alt="">
+                        <div class="text">
+                            <div class="horizontal">
+                              <h1 class="mb-4 mt-3" style="font-size: 52px;    font-family: 'Anton', sans-serif;">Summer Special <br>2023</h1>       
+                              <p style="    font-family: 'Anton', sans-serif; "><a href="#" class="hero-btn">Discover Now</a></p>
+                            </div>
+    
+                    </div>
+                  </div>
+              </div>
+            </div>
+    
+            </div>
+          </div>
+    </section>
+    <!---------nextsec--------------->
+    <section class="food">
+        <div class="center-container">
+            <h1 style="font-family: Anton,'sans-serif'; font-size: 45px;">Categories</h1>
+
+        </div>
+
+        <div class="container">
+            <div class="food-box">
+                <img src="/Web/canteen/sand.png" class="food-img">
+                <h2 class="food-title">Sandwiches</h2>
+                <button class="expand-button" id="expandButton">
+                     <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="expanded-content" id="expCont">
+                    <!-------expcontent-->
+                </div>
+            </div>
+
+            <!--pizza-->
+            <div class="food-box">
+                <img src="/Web/canteen/pizza.png" class="food-img">
+                <h2 class="food-title">Pizza</h2>
+                <button class="expand-button" id="expandButton">
+                     <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="expanded-content" id="expCont">
+                    <!-------expcontent-->
+                </div>
+            </div>
+
+            <!----Baked goods-->
+            <div class="food-box">
+                <img src="/Web/canteen/bake.png" class="food-img">
+                <h2 class="food-title">Baked Goods</h2>
+                <button class="expand-button" id="expandButton">
+                     <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="expanded-content" id="expCont">
+                    <!-------expcontent-->
+                </div>
+            </div>
+
+            <!-----Rice-->
+            <div class="food-box">
+                <img src="/Web/canteen/rice.png" class="food-img">
+                <h2 class="food-title">Rice</h2>
+                <button class="expand-button" id="expandButton">
+                     <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="expanded-content" id="expCont">
+                    <!-------expcontent-->
+                </div>
+            </div>
+
+            <!-----Curry-->
+            <div class="food-box">
+                <img src="/Web/canteen/curry.png" class="food-img">
+                <h2 class="food-title">Curry</h2>
+                <button class="expand-button" id="expandButton">
+                     <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="expanded-content" id="expCont">
+                    <!-------expcontent-->
+                </div>
+            </div>
+
+
+            <!-----Drinks-->
+
+            <div class="food-box">
+                <img src="/Web/canteen/juice.png" class="food-img">
+                <h2 class="food-title">Juice</h2>
+                <button class="expand-button" id="expandButton">
+                     <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="expanded-content" id="expCont">
+                    <!-------expcontent-->
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+  <!---------------neext sec end-->
+</body>
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</html>
