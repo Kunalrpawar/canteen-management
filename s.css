@@ -12,10 +12,23 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(to bottom, #FDEBD0 0%, #dbcc8f 100%);  
+    background: linear-gradient(45deg, #FF6B6B, #FF8E53, #FFAD69, #FFD6A0);
+    position: relative;
+
+
 }
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/Web/canteen/texture.png) repeat center;
+    mix-blend-mode:soft-light;
+}
+
 .container-fluid {
-    color: black;
+    margin-bottom: 20px;
     
 }
 .nav{
@@ -113,9 +126,79 @@ nav .fa{
 }
 /* --------food------- */
 .food{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #FDEBD0 0%, #dbcc8f 100%);  
+    background-size: cover;
     background-image: url(/Web/canteen/food.png);
-    background-size: repeat;
-    backdrop-filter: blur(10%);
+
+
+}
+
+.neonText {
+    color: #000;
+    text-shadow:
+      0 0 7px #000,
+      0 0 10px #000,
+      0 0 21px #000,
+      0 0 42px #FF6B6B,
+      0 0 82px #FF6B6B,
+      0 0 92px #FF6B6B,
+      0 0 102px #FF6B6B,
+      0 0 151px #FF6B6B;
+  }
+  h1 {
+    font-size: 6.2rem;
+    animation: pulsate 0.11s ease-in-out infinite alternate; ;  
+
+   
+    padding: 0.4em;
+    
+  }
+  
+  @keyframes pulsate {
+      
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #FF6B6B,
+        0 0 80px #FF6B6B,
+        0 0 90px #FF6B6B,
+        0 0 100px #FF6B6B,
+        0 0 150px #FF6B6B;
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px #FF6B6B,
+      0 0 45px #FF6B6B,
+      0 0 55px #FF6B6B,
+      0 0 70px #FF6B6B,
+      0 0 80px #FF6B6B;
+  
+  }
+}
+.animated-image {
+    animation: fadeInUp 1s ease-in-out infinite alternate; /* Add your animation properties */
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 .container{
     min-height: 60vh;
@@ -175,6 +258,8 @@ nav .fa{
     cursor: pointer;
     width: 40px;
     height: 40px;
+    color: white;
+    font-weight: 500;
 }
 .expand-button:hover{
     background: transparent;
