@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet/profileStyle.css">
+    <link rel="stylesheet" href="stylesheet/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+<body>
+<section class="header">
+    <div class="container-fluid mr-0 ml-0">
+        <nav>
+
+            <div class="nav-links" id="navLinks">
+                <a href="c2.html"><img src="../img/c-logo.png" style="height: 80px; width: 80px;" alt=""></a>
+
+                <ul>
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <li ><a href="c2.html">HOME</a></li>
+                    <li><a href="offer.html">OFFERS</a></li>
+                    <li><a href="order.html">ORDERS</a></li>
+                    <li><a href="profile.html">PROFILE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                    <li><button class="btn-cart" id="cart-icon">
+                        <i class="fa-solid fa-cart-shopping" justify-content-center></i></li>
+                    </button>
+                    <div class="cart-count">0</div>
+
+                </ul>
+
+            </div>
+            <div class="icon-container">
+                <i class="fa fa-bars" onclick="showMenu()" style="color: darkolivegreen;"></i>
+
+            </div>
+
+        </nav>
+        <!----cart-->
+        <div class="cart">
+            <div class="cart-title">
+                <div class="cart-content"><u>Cart Items</u>
+                    <div class="cart-box">
+                        <img src="../img/bake.png" class="cart-img">
+                        <div class="detail-box"></div>
+                        <div class="cart-food-title">Croissant</div>
+                        <div class="price-box">
+                            <div class="cart-price">Tk.40</div>
+                            <div class="cart-amt">Tk.40</div>
+                        </div>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    <i class="fa fa-trash cart-remove" onclick="removeCartItem(0)"></i>
+                </div>
+
+                <div class="cart-box">
+                    <img src="../img/rice.png" class="cart-img">
+                    <div class="detail-box"></div>
+                    <div class="cart-food-title">Rice</div>
+                    <div class="price-box">
+                        <div class="cart-price">Tk.20</div>
+                        <div class="cart-amt">Tk.20</div>
+                    </div>
+                    <input type="number" value="1" class="cart-quantity">
+                </div>
+                <i class="fa fa-trash cart-remove" onclick="removeCartItem(1)"></i>
+            </div>
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">Tk.0</div>
+            </div>
+            <button class="btn-buy">Place Order</button>
+            <i class="fa fa-close" id="cart-close"></i>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="container d-flex align-items-center justify-content-center">
+    <div class="row">
+        <div class="card mb-3 card-shadow" style="max-width: 70vw;">
+            <div class="row g-0">
+                <div class="card-body">
+                    <h1>Profile Overview</h1>
+                    <br>
+                    <div class="container">
+                        <h2>Profile</h2>
+                        <br>
+                        <div class="input-container">
+                            <input type="text" required="required" value="2120016"/>
+                            <span>ID Number *</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" required="required" value="Ikkty"/>
+                            <span>First Name *</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" required="required" value="Rahman"/>
+                            <span>Last Name *</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" required="required" value="+880 1910910616"/>
+                            <span>Mobile Number *</span>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="text" required="" />
+                            <span>Email</span>
+                        </div>
+
+
+                        <div class="container d-flex justify-content-center">
+                            <button type="button" class="btn btn-success">Save</button>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <div class="container">
+                        <h2>Password</h2>
+                        <br>
+                        <div class="input-container">
+                            <input type="password" required="required" />
+                            <span>Current Password</span>
+                        </div>
+                        <br>
+                        <div class="input-container">
+                            <input type="password" required="required" />
+                            <span>Enter New Password</span>
+                        </div>
+                        <div class="container d-flex justify-content-center">
+                            <button type="button" class="btn btn-success ">Save</button>
+                        </div>
+
+                    </div>
+                    <br><br><br>
+                    <div class="container">
+                        <h2>Payment Method</h2>
+                        <br>
+                        <div class="container">
+                            <div class="row">
+                                <label class="radiobox-container">bKash
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark">
+                                            <img class="pay-icon" src="img/bkash.png" alt="bkash">
+                                        </span>
+                                </label>
+                                <br>
+                                <label class="radiobox-container">Nagad
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark">
+                                            <img class="pay-icon" src="img/nagad.png" alt="bkash">
+                                        </span>
+                                </label>
+                                <br>
+                                <label class="radiobox-container">Rocket
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark">
+                                            <img class="pay-icon" src="img/rocket.png" alt="bkash">
+                                        </span>
+                                </label>
+                                <br>
+                                <label class="radiobox-container">Cash
+                                    <input type="radio" checked="checked"name="radio">
+                                    <span class="checkmark">
+                                            <i class="fa-regular fa-money-bill-1 fa-2xl pay-icon"></i>
+                                        </span>
+                                </label>
+                                <label class="radiobox-container">Payment Card
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark">
+                                            <i class="fa-regular fa-credit-card fa-2xl pay-icon"></i>
+                                        </span>
+                                </label>
+                            </div>
+                            <div class="container d-flex justify-content-center">
+                                <button type="button" class="btn btn-success ">Save</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>
