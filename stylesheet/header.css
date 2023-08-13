@@ -38,8 +38,8 @@ nav img{
 .nav-links{
     right: 0;
     left: 0;
-    position: fixed;
-    top: 0;
+    top: -20%;
+    position: absolute;
     margin: 0px;
     width: 100%;
     border-bottom: 2px solid #000; /* Add a solid line at the bottom of the navbar */
