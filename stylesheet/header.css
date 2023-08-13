@@ -3,7 +3,6 @@
 .header{
     min-height: 15vh;
     width: 100%;
-    background: url(../img/fb.png);
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
