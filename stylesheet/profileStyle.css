@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /*Horizontal Scrollbar Because of animation overflow*/
+    overflow-x: hidden;
+}
+
+
+
+
+.card-shadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+
+/* text area */
+.input-container{
+    position: relative;
+    width: 50vw;
+    margin: 0 0 1em;
+}
+.input-container input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #c2c2c2;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.input-container span{
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    padding: 10px;
+    color: #e1dbdb;
+    pointer-events: none;
+    transition: 0.2s;
+}
+.input-container input:valid ~ span,
+.input-container input:focus ~ span{
+    color: #5d7c00;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding: 0 6px;
+    background: #fff;
+
+}
+
+.input-container input:valid,
+.input-container input:focus{
+    color: #000000;
+    border: 2px solid #8dab26;
+
+}
+
+
+/* radio box */
+
+.radiobox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radiobox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radiobox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radiobox-container input:checked ~ .checkmark {
+    background-color: #000000;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radiobox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radiobox-container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.pay-icon {
+    display: inline-block; /* Make the icon inline with text */
+    vertical-align: middle; /* Align the icon vertically with the text */
+    margin-left: 2600%; /* Add some space between the icon and the text */
+    width: 2em;
+    height: 1.5em;
+}
+
+
+.btn {
+    border-radius: 10px;
+    width: 100px;
+}
