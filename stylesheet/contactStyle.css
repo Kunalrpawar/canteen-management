@@ -75,7 +75,6 @@ p {
 /* ... Your existing CSS ... */
 
 .social-icons {
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,8 +92,11 @@ p {
     width: 100%;
 }
 
-                                                                                                                                                                                                                      Feel free to adjust the padding, border color, and other styles to match your design preferences. Test it in different browsers and screen sizes to ensure that it works well across various devices.
+.social-heading {
+    padding-left: 37%;
+    margin-top: 2%;
 
+}
 
 
 
