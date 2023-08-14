@@ -147,7 +147,7 @@ h2 {
 .pay-icon {
     display: inline-block; /* Make the icon inline with text */
     vertical-align: middle; /* Align the icon vertically with the text */
-    margin-left: 2600%; /* Add some space between the icon and the text */
+    margin-left: 2500%; /* Add some space between the icon and the text */
     width: 2em;
     height: 1.5em;
 }
