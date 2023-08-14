@@ -1,11 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Raleway:wght@500&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --height-input: 48px;
+    --pad-input: 16px;
+    --bg-input: #fff;
+    --color-input: #222;
+    --border-input: #e9e9e9;
 }
 
 html {
@@ -16,3 +23,81 @@ body {
     /*Horizontal Scrollbar Because of animation overflow*/
     overflow-x: hidden;
 }
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
+
+}
+
+.contact-form {
+    width: 140%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Raleway', sans-serif;
+}
+.form-group {
+    padding-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.form-control {
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #337016;
+    border-color: #337016;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #337016;
+    border-color: #337016;
+}
+
+/* ... Your existing CSS ... */
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-link {
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+    padding-right: 25px;
+}
+
+
+.btn-full-width {
+    width: 100%;
+}
+
+                                                                                                                                                                                                                      Feel free to adjust the padding, border color, and other styles to match your design preferences. Test it in different browsers and screen sizes to ensure that it works well across various devices.
+
+
+
+
+
+
+
