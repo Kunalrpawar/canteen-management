@@ -21,7 +21,6 @@ body{
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 1;
 
 }
 .header::before{
@@ -42,6 +41,7 @@ body{
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
     
 
 }
