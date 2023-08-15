@@ -357,7 +357,7 @@
                                                                     <h4 class="card-title card-title-dash">Menu Items</h4>
                                                                 </div>
                                                                 <div>
-                                                                    <button id="addRowButton" class="btn btn-primary btn-lg text-white mb-0 me-0" type="button"><i class="mdi mdi-account-plus"></i>Add Menu Item</button>
+                                                                    <button id="addRowButton" class="btn btn-primary btn-lg text-white mb-0 me-0" type="button"><i class="mdi mdi-plus"></i>Add Menu Item</button>
                                                                 </div>
                                                             </div>
                                                             <div class="col-lg-12 grid-margin stretch-card">
@@ -699,6 +699,9 @@
                                                                                 </tbody>
                                                                             </table>
                                                                         </div>
+                                                                        <div class="d-flex justify-content-center align-items-center">
+                                                                            <button class="btn btn-success btn-lg text-white mb-0 me-0" type="button" data-bs-toggle="modal" data-bs-target="#saveModal">Save</button>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -714,6 +717,25 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="saveModal" tabindex="-1" aria-labelledby="saveModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="saveModalLabel">Changes Saved</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Your changes have been successfully saved.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             <!--  JS to add employee    -->
             <script>
