@@ -5,51 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Charm&family=Lora:wght@500&family=Poppins:wght@300&family=Roboto:wght@100&display=swap');
-      </style>
+    </style>
 
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caprasimo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caprasimo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="s.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Customer-Dashboard</title>
 </head>
 <body>
-    <section class="header">
-        <div class="container-fluid mr-0 ml-0">
-            <nav>
-    
-                <div class="nav-links" id="navLinks">
-                    <a href="c2.html"><img src="../img/c-logo.png" style="height: 80px; width: 80px;" alt=""></a>
+<section class="header">
+    <div class="container-fluid mr-0 ml-0">
+        <nav>
 
-                    <ul>
-                        <i class="fa fa-times" onclick="hideMenu()"></i>
-                        <li ><a href="c2.html">HOME</a></li>
-                        <li><a href="offers.html">OFFERS</a></li>
-                        <li><a href="order.html">ORDERS</a></li>
-                        <li><a href="profile.html">PROFILE</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
-    
-                        <li><button class="btn-cart" id="cart-icon">
-                            <i class="fa-solid fa-cart-shopping" justify-content-center></i></li>
-                        </button>
-                        <div class="cart-count">0</div>
-    
-                    </ul>
-    
-                </div>
-                <div class="icon-container">
-                    <i class="fa fa-bars" onclick="showMenu()" style="color: darkolivegreen;"></i>
-    
-                </div>
-    
-            </nav>
-            <!----cart-->
-            <div class="cart">
-                <div class="cart-title"> 
-                    <div class="cart-content"><u>Cart Items</u>
-                      
+            <div class="nav-links" id="navLinks">
+                <a href="c2.html"><img src="../img/c-logo.png" style="height: 80px; width: 80px;" alt=""></a>
+
+                <ul>
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <li ><a href="c2.html">HOME</a></li>
+                    <li><a href="offers.html">OFFERS</a></li>
+                    <li><a href="order.html">ORDERS</a></li>
+                    <li><a href="profile.html">PROFILE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                    <li><button class="btn-cart" id="cart-icon">
+                        <i class="fa-solid fa-cart-shopping" justify-content-center></i></li>
+                    </button>
+                    <div class="cart-count">0</div>
+
+                </ul>
+
+            </div>
+            <div class="icon-container">
+                <i class="fa fa-bars" onclick="showMenu()" style="color: darkolivegreen;"></i>
+
+            </div>
+
+        </nav>
+        <!----cart-->
+        <div class="cart">
+            <div class="cart-title">
+                <div class="cart-content"><u>Cart Items</u>
+
                     <div class="cart-box">
                         <img src="../img/rice.png" class="cart-img">
                         <div class="detail-box"></div>
@@ -66,35 +66,34 @@
                     <div class="total-title">Total</div>
                     <div class="total-price">Tk.0</div>
                 </div>
-                    <button class="btn-buy popup-button" id="showPopup" >
-                       Place Order</button>
-                    <i class="fa fa-close" id="cart-close"></i>
-                    <div class="popup-container" id="popupContainer">
-                        <div class="popup">
-                          <p>Are you sure you want to confirm your order?</p>
-                  
-                          <a href="order.html"><button class="btn-buy" style="margin-right: 10px;">Yes</button></a>  <button class="btn-buy" id="closePopup"> No</button>
-                        </div>
-                      </div>
-                </div>
+                <button class="btn-buy popup-button" id="showPopup" >
+                    Place Order</button>
+                <i class="fa fa-close" id="cart-close"></i>
+                <div class="popup-container" id="popupContainer">
+                    <div class="popup">
+                        <p>Are you sure you want to confirm your order?</p>
 
+                        <a href="order.html"><button class="btn-buy" style="margin-right: 10px;">Yes</button></a>  <button class="btn-buy" id="closePopup"> No</button>
+                    </div>
+                </div>
             </div>
+
         </div>
-        <div class="container mt-lg-2">
-            <div class="home-slider owl-carousel">
-                <div class="slider-item js-fullheight">
-                    <div class="overlay"></div>
-                    <div class="container-fluid p-0">
-                        <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-                            <div style="left: -100px" class="col-md-6 order-md-last justify-content-center align-items-center">
-                                <img class="animated-image" src="../img/ice.png" alt="">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="text">
-                                    <div class="horizontal">
-                                        <h1  style="font-size: 52px; font-family: 'Anton', sans-serif;">Summer Special <br>2023</h1>
-                                        <p style="font-family: 'Anton', sans-serif;"><a href="#" class="hero-btn">Discover Now</a></p>
-                                    </div>
+    </div>
+    <div class="container mt-lg-2">
+        <div class="home-slider owl-carousel">
+            <div class="slider-item js-fullheight">
+                <div class="overlay"></div>
+                <div class="container-fluid p-0">
+                    <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+                        <div style="left: -100px" class="col-md-6 order-md-last justify-content-center align-items-center">
+                            <img class="animated-image" src="../img/ice.png" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text">
+                                <div class="horizontal">
+                                    <h1  style="font-size: 52px; font-family: 'Anton', sans-serif;">Summer Special <br>2023</h1>
+                                    <p style="font-family: 'Anton', sans-serif;"><a href="#" class="hero-btn">Discover Now</a></p>
                                 </div>
                             </div>
                         </div>
@@ -102,261 +101,262 @@
                 </div>
             </div>
         </div>
-        
-    </section>
-    <!---------nextsec--------------->
-    <section class="food">
-        <div class="center-container">
-            <h1 style="font-family: Anton,'sans-serif'; font-size: 45px;">Categories</h1>
-        </div>
-        <div class = "container mt-0 mb-0 justify-content-lg-center">
-            <div class="expr-list" >
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('sandwiches')">Sandwiches</p>
-                    <p class="tab-links" onclick="opentab('pizza')">Pizza</p>
-                    <p class="tab-links" onclick="opentab('bakedgoods')">Baked Goods</p>
-                    <p class="tab-links " onclick="opentab('rice')">Rice</p>
-                    <p class="tab-links " onclick="opentab('curry')">Curry</p>
-                    <p class="tab-links " onclick="opentab('juice')">Juice</p>
-
-                </div>
-                <div class="tab-contents active-tab" id = "sandwiches">
-                    <ul>
-                        <div class="container mt-0 mb-0">
-                            <div class="food-box">
-                                <img src="../img/chicken.png" class="food-img">
-                                <h2 class="food-title" style="color: darkolivegreen;">Chicken</h2>
-                                <h3 class="food-price">Tk.40</h3>
-                                <button class="add-cart" id="addCart">
-                                    Add to Cart
-                                </button>
-                    
-                            </div>
-                            <div class="food-box">
-                                <img src="../img/beefs.png" class="food-img">
-                                <h2 class="food-title" style="color: darkolivegreen;">Beef</h2>
-                                <h3 class="food-price">Tk. 50</h3>
-                                <button class="add-cart" id="addCart" style="position: relative;">
-                                    Add to Cart
-                                </button>
-                    
-                            </div>
-                            <div class="food-box">
-                                <img src="../img/vegs.png" class="food-img">
-                                <h2 class="food-title " style="color: darkolivegreen;">Veg</h2>
-                                <h3 class="food-price">Tk. 30</h3>
-
-                                <button class="add-cart" id="addCart">
-                                    Add to Cart
-                                </button>
-                    
-                            </div>
-
-                    </ul>          
-                
-                </div>
-                <div class="tab-contents" id = "pizza">
-                    <ul>
-                        <div class="container mt-0 mb-0">
-                            <div class="food-box">
-                                <img src="../img/cheese.png" class="food-img">
-                                <h2 class="food-title" style="color: darkolivegreen;">Cheese</h2>
-                                <h3 class="food-price">Tk. 40</h3>
-
-                                <button class="add-cart" id="addCart">
-                                    Add to Cart
-                                </button>
-                    
-                            </div>
-                            <div class="food-box">
-                                <img src="../img/mex.png" class="food-img">
-                                <h2 class="food-title" style="color: darkolivegreen;">Mexican</h2>
-                                <h3 class="food-price">Tk. 60</h3>
-
-                                <button class="add-cart" id="addCart">
-                                    Add to Cart
-                                </button>
-                    
-                            </div>
-                            <div class="food-box">
-                                <img src="../img/tb.png" class="food-img">
-                                <h2 class="food-title" style="color: darkolivegreen;">Texas BBQ</h2>
-                                <h3 class="food-price">Tk. 70</h3>
-
-                                <button class="add-cart" id="addCart">
-                                    Add to Cart
-                                </button>
-                    
-                            </div>
-                      
-                    </ul>
-                </div>
-                <div class="tab-contents" id="bakedgoods">
-                    <ul>
-                        <div class="container mt-0 mb-0">
-                            <div class="food-box">
-                                <img src="../img/cr.png" class="food-img">
-                                <h2 class="food-title" style="color: darkolivegreen;">Croissant</h2>
-                                <h3 class="food-price">Tk. 40</h3>
-
-                                <button class="add-cart" id="addCart">
-                                    Add to Cart
-                                </button>
-                    
-                            </div>
-                            <div class="food-box">
-                                <img src="../img/shin.png" class="food-img">
-                                <h2 class="food-title" style="color: darkolivegreen;">Baked Shingara</h2>
-                                <h3 class="food-price">Tk. 10</h3>
-
-                                <button class="add-cart" id="addCart">
-                                    Add to Cart
-                                </button>
-                    
-                            </div>
-                            <div class="food-box">
-                                <img src="../img/plain.png" class="food-img">
-                                <h2 class="food-title" style="color: darkolivegreen;">Plain Cake</h2>
-                                <h3 class="food-price">Tk. 20</h3>
-
-                                <button class="add-cart" id="addCart">
-                                    Add to Cart
-                                </button>
-                    
-                            </div>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="rice">
-                    <ul>
-                        <div class="container mt-0 mb-0">
-                            <div class="food-box">
-                                <img src="../img/rice.png" class="food-img">
-                                <h2 class="food-title" style="color: darkolivegreen;">Plain</h2>
-                                <h3 class="food-price">Tk. 30</h3>
-
-                                <button class="add-cart" id="addCart">
-                                    Add to Cart
-                                </button>
-                    
-                            </div>
-                            <div class="food-box">
-                                <img src="../img/kichu.png" class="food-img">
-                                <h2 class="food-title" style="color: darkolivegreen;">Khichuri</h2>
-                                <h3 class="food-price">Tk. 100</h3>
-
-                                <button class="add-cart" id="addCart">
-                                    Add to Cart
-                                </button>
-                    
-                            </div>
-                            <div class="food-box">
-                                <img src="../img/cb.png" class="food-img">
-                                <h2 class="food-title" style="color: darkolivegreen;">Chicken Tehari</h2>
-                                <h3 class="food-price">Tk. 170</h3>
-
-                                <button class="add-cart" id="addCart">
-                                    Add to Cart
-                                </button>
-                    
-                            </div>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="curry">
-                    <ul>
-                        <div class="container mt-0 mb-0">
-                            <div class="food-box">
-                                <img src="../img/curry.png" class="food-img">
-                                <h2 class="food-title" style="color: darkolivegreen;">Chicken</h2>
-                                <button class="add-cart" id="addCart">
-                                    Add to Cart
-                                </button>
-                    
-                            </div>
-                            <div class="food-box">
-                                <img src="../img/acha.png" class="food-img">
-                                <h2 class="food-title" style="color: darkolivegreen;">Beef Achari</h2>
-                                <h3 class="food-price">Tk. 50</h3>
-
-                                <button class="add-cart" id="addCart">
-                                    Add to Cart
-                                </button>
-                    
-                            </div>
-                            <div class="food-box">
-                                <img src="../img/daal.png" class="food-img">
-                                <h2 class="food-title" style="color: darkolivegreen;">Daal</h2>
-                                <h3 class="food-price">Tk. 25</h3>
-
-                                <button class="add-cart" id="addCart">
-                                    Add to Cart
-                                </button>
-                    
-                            </div>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="juice">
-                    <ul>
-                        <div class="container mt-0 mb-0">
-                            <div class="food-box">
-                                <img src="../img/og.png" class="food-img">
-                                <h2 class="food-title" style="color: darkolivegreen;">Orange</h2>
-                                <h3 class="food-price">Tk. 50</h3>
-
-                                <button class="add-cart" id="addCart">
-                                    Add to Cart
-                                </button>
-                    
-                            </div>
-                            <div class="food-box">
-                                <img src="../img/lm.png" class="food-img">
-                                <h2 class="food-title" style="color: darkolivegreen;">Lemon</h2>
-                                <h3 class="food-price">Tk. 25</h3>
-
-                                <button class="add-cart" id="addCart">
-                                    Add to Cart
-                                </button>
-                    
-                            </div>
-                            <div class="food-box">
-                                <img src="../img/wm.png" class="food-img">
-                                <h2 class="food-title" style="color: darkolivegreen;">Watermelon</h2>
-                                <h3 class="food-price">Tk. 40</h3>
-
-                                <button class="add-cart" id="addCart">
-                                    Add to Cart
-                                </button>
-                    
-                            </div>
-                        
-                    </ul>
-                </div>
-            </div>
-       </div>
-       
     </div>
-</div>
+
+</section>
+<!---------nextsec--------------->
+<section class="food">
+    <div class="center-container">
+        <h1 style="font-family: Anton,'sans-serif'; font-size: 45px;">Categories</h1>
+    </div>
+    <div class = "container mt-0 mb-0 justify-content-lg-center">
+        <div class="expr-list" >
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('sandwiches')">Sandwiches</p>
+                <p class="tab-links" onclick="opentab('pizza')">Pizza</p>
+                <p class="tab-links" onclick="opentab('bakedgoods')">Baked Goods</p>
+                <p class="tab-links " onclick="opentab('rice')">Rice</p>
+                <p class="tab-links " onclick="opentab('curry')">Curry</p>
+                <p class="tab-links " onclick="opentab('juice')">Juice</p>
+
+            </div>
+            <div class="tab-contents active-tab" id = "sandwiches">
+                <ul>
+                    <div class="container mt-0 mb-0">
+                        <div class="food-box">
+                            <img src="../img/chicken.png" class="food-img">
+                            <h2 class="food-title" style="color: darkolivegreen;">Chicken</h2>
+                            <h3 class="food-price">Tk.40</h3>
+                            <button class="add-cart" id="addCart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+                        <div class="food-box">
+                            <img src="../img/beefs.png" class="food-img">
+                            <h2 class="food-title" style="color: darkolivegreen;">Beef</h2>
+                            <h3 class="food-price">Tk. 50</h3>
+                            <button class="add-cart" id="addCart" style="position: relative;">
+                                Add to Cart
+                            </button>
+
+                        </div>
+                        <div class="food-box">
+                            <img src="../img/vegs.png" class="food-img">
+                            <h2 class="food-title " style="color: darkolivegreen;">Veg</h2>
+                            <h3 class="food-price">Tk. 30</h3>
+
+                            <button class="add-cart" id="addCart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                </ul>
+
+            </div>
+            <div class="tab-contents" id = "pizza">
+                <ul>
+                    <div class="container mt-0 mb-0">
+                        <div class="food-box">
+                            <img src="../img/cheese.png" class="food-img">
+                            <h2 class="food-title" style="color: darkolivegreen;">Cheese</h2>
+                            <h3 class="food-price">Tk. 40</h3>
+
+                            <button class="add-cart" id="addCart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+                        <div class="food-box">
+                            <img src="../img/mex.png" class="food-img">
+                            <h2 class="food-title" style="color: darkolivegreen;">Mexican</h2>
+                            <h3 class="food-price">Tk. 60</h3>
+
+                            <button class="add-cart" id="addCart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+                        <div class="food-box">
+                            <img src="../img/tb.png" class="food-img">
+                            <h2 class="food-title" style="color: darkolivegreen;">Texas BBQ</h2>
+                            <h3 class="food-price">Tk. 70</h3>
+
+                            <button class="add-cart" id="addCart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                </ul>
+            </div>
+            <div class="tab-contents" id="bakedgoods">
+                <ul>
+                    <div class="container mt-0 mb-0">
+                        <div class="food-box">
+                            <img src="../img/cr.png" class="food-img">
+                            <h2 class="food-title" style="color: darkolivegreen;">Croissant</h2>
+                            <h3 class="food-price">Tk. 40</h3>
+
+                            <button class="add-cart" id="addCart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+                        <div class="food-box">
+                            <img src="../img/shin.png" class="food-img">
+                            <h2 class="food-title" style="color: darkolivegreen;">Baked Shingara</h2>
+                            <h3 class="food-price">Tk. 10</h3>
+
+                            <button class="add-cart" id="addCart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+                        <div class="food-box">
+                            <img src="../img/plain.png" class="food-img">
+                            <h2 class="food-title" style="color: darkolivegreen;">Plain Cake</h2>
+                            <h3 class="food-price">Tk. 20</h3>
+
+                            <button class="add-cart" id="addCart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+                </ul>
+            </div>
+            <div class="tab-contents" id="rice">
+                <ul>
+                    <div class="container mt-0 mb-0">
+                        <div class="food-box">
+                            <img src="../img/rice.png" class="food-img">
+                            <h2 class="food-title" style="color: darkolivegreen;">Plain</h2>
+                            <h3 class="food-price">Tk. 30</h3>
+
+                            <button class="add-cart" id="addCart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+                        <div class="food-box">
+                            <img src="../img/kichu.png" class="food-img">
+                            <h2 class="food-title" style="color: darkolivegreen;">Khichuri</h2>
+                            <h3 class="food-price">Tk. 100</h3>
+
+                            <button class="add-cart" id="addCart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+                        <div class="food-box">
+                            <img src="../img/cb.png" class="food-img">
+                            <h2 class="food-title" style="color: darkolivegreen;">Chicken Tehari</h2>
+                            <h3 class="food-price">Tk. 170</h3>
+
+                            <button class="add-cart" id="addCart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+                </ul>
+            </div>
+            <div class="tab-contents" id="curry">
+                <ul>
+                    <div class="container mt-0 mb-0">
+                        <div class="food-box">
+                            <img src="../img/curry.png" class="food-img">
+                            <h2 class="food-title" style="color: darkolivegreen;">Chicken</h2>
+                            <button class="add-cart" id="addCart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+                        <div class="food-box">
+                            <img src="../img/acha.png" class="food-img">
+                            <h2 class="food-title" style="color: darkolivegreen;">Beef Achari</h2>
+                            <h3 class="food-price">Tk. 50</h3>
+
+                            <button class="add-cart" id="addCart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+                        <div class="food-box">
+                            <img src="../img/daal.png" class="food-img">
+                            <h2 class="food-title" style="color: darkolivegreen;">Daal</h2>
+                            <h3 class="food-price">Tk. 25</h3>
+
+                            <button class="add-cart" id="addCart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+                </ul>
+            </div>
+            <div class="tab-contents" id="juice">
+                <ul>
+                    <div class="container mt-0 mb-0">
+                        <div class="food-box">
+                            <img src="../img/og.png" class="food-img">
+                            <h2 class="food-title" style="color: darkolivegreen;">Orange</h2>
+                            <h3 class="food-price">Tk. 50</h3>
+
+                            <button class="add-cart" id="addCart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+                        <div class="food-box">
+                            <img src="../img/lm.png" class="food-img">
+                            <h2 class="food-title" style="color: darkolivegreen;">Lemon</h2>
+                            <h3 class="food-price">Tk. 25</h3>
+
+                            <button class="add-cart" id="addCart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+                        <div class="food-box">
+                            <img src="../img/wm.png" class="food-img">
+                            <h2 class="food-title" style="color: darkolivegreen;">Watermelon</h2>
+                            <h3 class="food-price">Tk. 40</h3>
+
+                            <button class="add-cart" id="addCart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
 
 
 
 
 
-  <!---------------neext sec end-->
+    <!---------------neext sec end-->
 </body>
 
 <script>
-       var tablinks = document.getElementsByClassName("tab-links");
-     var tabcontents = document.getElementsByClassName("tab-contents");
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
-     function opentab(tabname){
-         for(tablink of tablinks){
-             tablink.classList.remove("active-link");
-         }
-         for(tabcontent of tabcontents){
-             tabcontent.classList.remove("active-tab");
-         }
-         event.currentTarget.classList.add("active-link");
-         document.getElementById(tabname).classList.add("active-tab");
-     }
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
 
 </script>
 
@@ -372,20 +372,20 @@
     function hideMenu(){
         navLinks.style.right = "-200px";
     }
-   
+
 </script>
 
 <script>
-  const showPopupButton = document.getElementById('showPopup');
-  const closePopupButton = document.getElementById('closePopup');
-  const popupContainer = document.getElementById('popupContainer');
+    const showPopupButton = document.getElementById('showPopup');
+    const closePopupButton = document.getElementById('closePopup');
+    const popupContainer = document.getElementById('popupContainer');
 
-  showPopupButton.addEventListener('click', () => {
-    popupContainer.style.display = 'flex';
-  });
-  closePopupButton.addEventListener('click', () => {
-    popupContainer.style.display = 'none';
-  });
+    showPopupButton.addEventListener('click', () => {
+        popupContainer.style.display = 'flex';
+    });
+    closePopupButton.addEventListener('click', () => {
+        popupContainer.style.display = 'none';
+    });
 </script>
 
 
