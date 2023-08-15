@@ -190,19 +190,19 @@
 </form>
 
 <script>
-       var tablinks = document.getElementsByClassName("tab-links");
-     var tabcontents = document.getElementsByClassName("tab-contents");
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
-     function opentab(tabname){
-         for(tablink of tablinks){
-             tablink.classList.remove("active-link");
-         }
-         for(tabcontent of tabcontents){
-             tabcontent.classList.remove("active-tab");
-         }
-         event.currentTarget.classList.add("active-link");
-         document.getElementById(tabname).classList.add("active-tab");
-     }
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
 
 </script>
 
@@ -218,23 +218,22 @@
     function hideMenu(){
         navLinks.style.right = "-200px";
     }
-   
+
 </script>
+
 <script>
-    function removeCartItem(index) {
-    // Remove the cart item at the given index from the DOM
-    // Adjust the code according to your actual structure
-    var cartItem = document.getElementsByClassName("cart-box")[index];
-    cartItem.parentNode.removeChild(cartItem);
+    const showPopupButton = document.getElementById('showPopup');
+    const closePopupButton = document.getElementById('closePopup');
+    const popupContainer = document.getElementById('popupContainer');
 
-    // Recalculate total and update the cart count
-    // ...
-
-    // Update the displayed total price and cart count
-    // ...
-}
-
+    showPopupButton.addEventListener('click', () => {
+        popupContainer.style.display = 'flex';
+    });
+    closePopupButton.addEventListener('click', () => {
+        popupContainer.style.display = 'none';
+    });
 </script>
+
 </body>
 
 </html>

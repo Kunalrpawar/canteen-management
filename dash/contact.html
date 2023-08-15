@@ -161,20 +161,19 @@
     }
 
 </script>
+
 <script>
-    function removeCartItem(index) {
-        // Remove the cart item at the given index from the DOM
-        // Adjust the code according to your actual structure
-        var cartItem = document.getElementsByClassName("cart-box")[index];
-        cartItem.parentNode.removeChild(cartItem);
+    const showPopupButton = document.getElementById('showPopup');
+    const closePopupButton = document.getElementById('closePopup');
+    const popupContainer = document.getElementById('popupContainer');
 
-        // Recalculate total and update the cart count
-        // ...
-
-        // Update the displayed total price and cart count
-        // ...
-    }
-
+    showPopupButton.addEventListener('click', () => {
+        popupContainer.style.display = 'flex';
+    });
+    closePopupButton.addEventListener('click', () => {
+        popupContainer.style.display = 'none';
+    });
 </script>
+
 </body>
 </html>
