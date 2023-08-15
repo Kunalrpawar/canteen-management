@@ -87,9 +87,9 @@ h2 {
     display: block;
     position: relative;
     padding-left: 35px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 18px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -149,10 +149,12 @@ h2 {
 .pay-icon {
     display: inline-block; /* Make the icon inline with text */
     vertical-align: middle; /* Align the icon vertically with the text */
-    margin-left: 2500%; /* Add some space between the icon and the text */
+    margin-left: 41vw; /* Add some space between the icon and the text */
     width: 2em;
     height: 1.5em;
 }
+
+
 
 
 .btn {
@@ -160,3 +162,85 @@ h2 {
     width: 100px;
 
 }
+
+
+/* accordion */
+.accordion-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+
+/* customize accordion appearance */
+.accordion-button {
+    background-color: transparent;
+    color: black; /* Change the text color */
+    outline: none; /* Remove focus outline */
+}
+
+.accordion-button:hover {
+    background-color: transparent;
+    color: #333;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+
+.accordion-button.collapsed {
+    color: black;
+    border: none;
+}
+.accordion-button:not(.collapsed) {
+    color: transparent;
+    background-color: transparent;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+}
+
+.accordion-body {
+    background-color: #ffffff;
+    border: none;
+}
+
+.accordion-item {
+    border: none;
+    width: 80%;
+    display: inline;
+
+
+
+}
+.accordion-button {
+    top: -2.4rem;
+    left: -1.1rem;
+
+}
+
+/*accord btn*/
+.acc-btn {
+    display: inline;
+    width: 20%;
+    font-size: small;
+    margin-bottom: 5%;
+}
+
+.cred-icon {
+    display: inline-block; /* Make the icon inline with text */
+    vertical-align: middle; /* Align the icon vertically with the text */
+    margin-right: 1vw; /* Add some space between the icon and the text */
+    width: 2.3em;
+    height: 1.5em;
+}
+
+/*.del-cred-icon {*/
+/*    display: inline-block; !* Make the icon inline with text *!*/
+/*    vertical-align: middle; !* Align the icon vertically with the text *!*/
+/*    left: 4rem; !* Add some space between the icon and the text *!*/
+/*    width: 2em;*/
+/*    height: 1.5em;*/
+/*}*/
+
