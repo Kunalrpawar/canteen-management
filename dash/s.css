@@ -40,8 +40,7 @@ body{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
-    z-index: 1;
+    align-items: center;
     
 
 }
