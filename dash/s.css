@@ -54,7 +54,7 @@ nav img{
 .nav-links{
     right: 0;
     left: 0;
-    position: fixed;
+    position: absolute;
     top: 0;
     margin: 0px;
     width: 100%;
